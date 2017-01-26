@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		41BD4F561E12C79F00BBA250 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F551E12C79F00BBA250 /* AppDelegate.swift */; };
-		41BD4F581E12C79F00BBA250 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F571E12C79F00BBA250 /* ViewController.swift */; };
+		41BD4F581E12C79F00BBA250 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F571E12C79F00BBA250 /* RecordViewController.swift */; };
 		41BD4F5B1E12C79F00BBA250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BD4F591E12C79F00BBA250 /* Main.storyboard */; };
 		41BD4F5D1E12C79F00BBA250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41BD4F5C1E12C79F00BBA250 /* Assets.xcassets */; };
 		41BD4F601E12C79F00BBA250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41BD4F5E1E12C79F00BBA250 /* LaunchScreen.storyboard */; };
 		41BD4F6B1E12C79F00BBA250 /* VoiceFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F6A1E12C79F00BBA250 /* VoiceFilterTests.swift */; };
 		41BD4F761E12C79F00BBA250 /* VoiceFilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F751E12C79F00BBA250 /* VoiceFilterUITests.swift */; };
+		41BD4F841E12DD1D00BBA250 /* PlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F831E12DD1D00BBA250 /* PlayAudioViewController.swift */; };
+		41BD4F861E12DE8C00BBA250 /* PlayAudioViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BD4F851E12DE8C00BBA250 /* PlayAudioViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		41BD4F521E12C79F00BBA250 /* VoiceFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BD4F551E12C79F00BBA250 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41BD4F571E12C79F00BBA250 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41BD4F571E12C79F00BBA250 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		41BD4F5A1E12C79F00BBA250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41BD4F5C1E12C79F00BBA250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41BD4F5F1E12C79F00BBA250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		41BD4F711E12C79F00BBA250 /* VoiceFilterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceFilterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41BD4F751E12C79F00BBA250 /* VoiceFilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceFilterUITests.swift; sourceTree = "<group>"; };
 		41BD4F771E12C79F00BBA250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BD4F831E12DD1D00BBA250 /* PlayAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAudioViewController.swift; sourceTree = "<group>"; };
+		41BD4F851E12DE8C00BBA250 /* PlayAudioViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayAudioViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				41BD4F551E12C79F00BBA250 /* AppDelegate.swift */,
-				41BD4F571E12C79F00BBA250 /* ViewController.swift */,
+				41BD4F571E12C79F00BBA250 /* RecordViewController.swift */,
 				41BD4F591E12C79F00BBA250 /* Main.storyboard */,
 				41BD4F5C1E12C79F00BBA250 /* Assets.xcassets */,
 				41BD4F5E1E12C79F00BBA250 /* LaunchScreen.storyboard */,
 				41BD4F611E12C79F00BBA250 /* Info.plist */,
+				41BD4F831E12DD1D00BBA250 /* PlayAudioViewController.swift */,
+				41BD4F851E12DE8C00BBA250 /* PlayAudioViewController+Audio.swift */,
 			);
 			path = VoiceFilter;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					41BD4F511E12C79F00BBA250 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3U4W9RVQH2;
 						ProvisioningStyle = Automatic;
 					};
 					41BD4F651E12C79F00BBA250 = {
@@ -259,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41BD4F581E12C79F00BBA250 /* ViewController.swift in Sources */,
+				41BD4F581E12C79F00BBA250 /* RecordViewController.swift in Sources */,
 				41BD4F561E12C79F00BBA250 /* AppDelegate.swift in Sources */,
+				41BD4F861E12DE8C00BBA250 /* PlayAudioViewController+Audio.swift in Sources */,
+				41BD4F841E12DD1D00BBA250 /* PlayAudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3U4W9RVQH2;
 				INFOPLIST_FILE = VoiceFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.screatch.VoiceFilter;
@@ -424,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3U4W9RVQH2;
 				INFOPLIST_FILE = VoiceFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.screatch.VoiceFilter;
@@ -505,6 +516,7 @@
 				41BD4F7C1E12C79F00BBA250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41BD4F7D1E12C79F00BBA250 /* Build configuration list for PBXNativeTarget "VoiceFilterTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +525,7 @@
 				41BD4F7F1E12C79F00BBA250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41BD4F801E12C79F00BBA250 /* Build configuration list for PBXNativeTarget "VoiceFilterUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +534,7 @@
 				41BD4F821E12C79F00BBA250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
